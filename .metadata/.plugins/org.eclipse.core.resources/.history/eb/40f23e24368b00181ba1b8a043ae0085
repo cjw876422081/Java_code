@@ -1,0 +1,11 @@
+package TestDemo;
+
+public class Book {
+	String tiltle ; 
+	double price ; 
+	public void getInfo()
+	{
+		System.out.println("图书名称：" + title + ", 价格："+ price);
+	}
+
+}

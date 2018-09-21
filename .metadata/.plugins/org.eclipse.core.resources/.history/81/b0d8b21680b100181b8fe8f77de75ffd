@@ -1,0 +1,14 @@
+package bank;
+
+public class TestBankCount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BankCount card  = new BankCount("123abc", "123", "456", "2000");
+		card.save_money(2000);
+		card.check_balance() ;
+		card.draw_money(500);
+		card.check_balance() ; 
+	}
+
+}

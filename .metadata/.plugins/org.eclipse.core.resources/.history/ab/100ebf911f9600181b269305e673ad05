@@ -1,0 +1,17 @@
+package com.cjg.noqueue;
+
+public class TestWater {
+	public static void main(String[] args) {
+		Water water = new Water();
+		Student xiaochang = new Student("小常" , water);
+		Student xiaoshang = new Student("小尚" , water);
+		Student xiaowang = new Student("小王" , water);
+		Student xiaoliu = new Student("小刘" , water);
+		
+		xiaochang.start();
+		xiaoshang.start();
+		xiaowang.start();
+		xiaoliu.start();
+		
+	}
+}

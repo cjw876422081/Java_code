@@ -1,0 +1,11 @@
+package software1711.niit;
+
+public class TestDog {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Dog gou = new Dog("’≈ª‘", 5 , 10 , "Õ¡π∑");
+		gou.print();
+	}
+
+}

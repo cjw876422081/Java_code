@@ -1,0 +1,15 @@
+package TestDemo;
+
+public class TestDemo {
+	public static void main(String arge[])
+	{
+		Book bk = new Book();
+		bk.tiltle ="java¿ª·¢";
+		bk.price = 1.0 ;
+		bk.getInfo();
+	}
+
+
+
+}
+

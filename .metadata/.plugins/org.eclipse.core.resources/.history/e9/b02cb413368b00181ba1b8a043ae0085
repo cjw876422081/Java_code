@@ -1,0 +1,21 @@
+package TestDemo;
+
+public class TestDemo {
+	public static void main(String arge[])
+	{
+		int numA = 100 ;
+		double numB = 99.0;
+		String str = "º”∑®º∆À„" + (numA + numB) ;
+		System.out.println(str);
+		printInfo();
+	}
+
+	private static void printInfo()
+	{
+		System.out.println("  **************** 	");
+		System.out.println("  wwww.youtk.com	");
+		System.out.println("  ****************	");
+	}
+
+}
+

@@ -1,0 +1,8 @@
+package rectangle;
+
+public class TestRectangle {
+	public static void main(String[] args) {
+		Rectangle A = new Rectangle( 10 , 8 )  ; 
+		System.out.println(A.area());
+	}
+}

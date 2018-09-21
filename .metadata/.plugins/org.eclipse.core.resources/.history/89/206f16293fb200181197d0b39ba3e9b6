@@ -1,0 +1,30 @@
+package bank;
+
+public class BankCount {
+
+	private String card ; 
+	private String name ; 
+	private String password ;
+	private int balance ;
+	public BankCount(String card, String name, String password , int balance) {
+		super();
+		this.card = card;
+		this.name = name;
+		this.password = password;
+		this.balance = balance ; 
+	}
+	public void save_money( int money) {
+		this.balance += money ; 
+	}
+	public void draw_money(int money) {
+		if(this.balance - money > 0 ) { 
+			System.out.println("Óà¶î²»×ã£¡");
+		}else {
+			this.balance -= money ; 
+		}
+	}
+	public int check_balance( ) {
+		return this.balance ; 
+	}
+	
+}

@@ -1,0 +1,65 @@
+package game;
+
+import java.util.Scanner;
+
+public class Game {
+	User person = new User(); 
+	Computer machine  = new Computer;
+	private int count ;
+	public int getCount() {
+		return count;
+	}
+	public void init() {
+		System.out.println("欢迎来到人机对战");
+		System.out.println("规则如下");
+		System.out.println("1.石头  2.剪刀  3.布子  ， 输入数字即可 ， 电脑随机出拳");
+		System.out.println("******************************************************");
+		Scanner sc = new Scanner(System.in) ; 
+		System.out.println("请先输入玩家名字");
+		String name = sc.next() ; 
+		person.setName(name);
+		System.out.println("请输入1.石头  2.剪刀  3.布子 任意一个数字 ");
+		int finger = sc.nextInt() ; 
+		person.setFinger(finger);
+		int finger2 = machine.showFirst() ;
+		play( finger , finger2 ) ; 
+	}
+	public void play( int a , int b) {
+		boolean win = false ; 
+		if( a == 1 ) {
+			 if( b == 1) {
+				 return ; 
+			 }else if(b == 2 ) {
+				 count -- ; 
+			 }else if(b == 3 ) {
+				 count ++ ; 
+				 win = true ; 
+			 }
+		}else if(a == 2 ) {
+			if( b == 1) {
+				 count ++ ; 
+				 win = true ; 
+			 }else if(b == 2 ) {
+				 return ; 
+			 }else if(b == 3 ) {
+				 count -- ; 
+			 }
+		}else if(a == 3 ) {
+			if( b == 1) {
+				 count -- ; 
+			 }else if(b == 2 ) {
+				 count ++ ; 
+				 win = true ; 
+			 }else if(b == 3 ) {
+				 return ; 
+			 }
+		}
+			
+		if( win == true ) {
+			System.out.println("此局" + person.getName() + "获胜了");
+		}else {
+			System.out.println("此局" + person.getName() + "输了");
+		}
+	}
+
+}

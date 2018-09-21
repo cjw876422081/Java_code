@@ -1,0 +1,14 @@
+package testDemo;
+
+public class B {
+
+	A a ; 
+	public B(A a)
+	{
+		this.a = a ; 
+	}
+	public void print( ) {
+		a.print();
+		System.out.println("head from B");
+	}
+}

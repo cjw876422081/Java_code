@@ -1,0 +1,25 @@
+package software1711.niit;
+
+public class TestDig {
+	//属性
+	private String name ;
+	private int health ;
+	private int love ;
+	private String strain ; 
+	public TestDig(String name, int health, int love, String strain) {
+		super();
+		this.name = name;
+		this.health = health;
+		this.love = love;
+		this.strain = strain;
+	}
+
+	
+	
+	//主要操作的是本类的实例变量
+	public void print() { 
+		System.out.println("大家好！我的名字是"+ this.name + "健康值" + this.health + 
+				"亲密度" + this.love + "品种" + this.strain );
+		
+	}
+}
